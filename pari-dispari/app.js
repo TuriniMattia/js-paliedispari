@@ -10,7 +10,20 @@ console.log(numeroPc)
 const somma = numeroUtente + numeroPc
 console.log(somma, somma % 2)
 
+console.log(sceltaUtente === "pari")
+console.log(sceltaUtente === "dispari")
 
+console.log( isEven(somma))
+
+console.log( !isEven(somma))
+
+if(sceltaUtente === "pari" && isEven(somma)){
+   console.log("hai vinto") 
+}else if(sceltaUtente === "dispari" && isEven(somma)){
+    console.log("hai vinto") 
+}else{
+    console.log("hai perso")
+}
 
 
 function getRandomIntInclusive(min, max) {
